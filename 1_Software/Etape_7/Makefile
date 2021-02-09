@@ -1,23 +1,23 @@
-CC=gcc
+CC=g++
 LDFLAGS=-lm
-EXEC=main
-SRC=./src/main.c
+EXEC=etape7
+SRC=./src/etape7.cpp ./src/pgcd.cpp
 
-OBJ= $(SRC:.c=.o)
+OBJ= $(SRC:.cpp=.o)
 
-CFLAGS=-O2 -Wall -DNDEBUG //pour executer en mode final -DNDEBUG
+CFLAGS=-O2 -Wall -std=c++11
 
 all: $(EXEC)
 
-main: $(OBJ)
+etape7: $(OBJ)
 	$(CC) $(CFLAGS) -o ./bin/$@ $^ $(LDFLAGS)
 
-%.o: %.c
+%.o: %.cpp
 	$(CC) $(CFLAGS) -o $@ -c $< $(CFLAGS)
 
 .PHONY: clean mrproper
 
-clean: $(OBJ)
+clean:
 	find . -name *.o -delete
 
 mrproper: clean

@@ -41,7 +41,7 @@ int PGCD(const int A, const int B);
 Afin de vous aider, le repertoire **Etape_1** contient les fichiers nécessaires à cette tache.
 
 - [X] Reprenez l’algorithme de calcul du PGDC et écrivez la fonction **C/C++** correspondante dans le fichier **main.c**.
-- [X] estez et validez votre code en écrivant un **main** qui d’exécute votre fonction et affiche les résultats dans le terminal.
+- [X] Testez et validez votre code en écrivant un **main** qui d’exécute votre fonction et affiche les résultats dans le terminal.
 - [X] Executez votre programme **main** afin de tester un couple de données.
 - [X] Maintenant, choississez une dizaine de couples de valeurs permettant de bien tester votre production.
 
@@ -86,7 +86,7 @@ Le nombre de couples d'entrées possibles pour votre fonction est égale à (655
 
 Mettez en place les mécanismes d’assertion vus en cours (à partir de la planche 130). Afin de vous assurer que les valeurs d'entrée et de sortie de votre fonction **PGCD** sont toujours cohérentes.
 
-- [X] **Reprenez le code que nous avez écrit durant l'étape 1**.
+- [X] **Reprenez le code que vous avez écrit durant l'étape 1**.
 
 - [X] Dans un premier temps vous n'insérerez que des pré-conditions.
 

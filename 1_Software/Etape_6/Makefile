@@ -1,7 +1,7 @@
 CC=gcc
 LDFLAGS=-lm
-EXEC=main
-SRC=./src/main.c
+EXEC=etape6
+SRC=./src/etape6.c ./src/pgcd.c
 
 OBJ= $(SRC:.c=.o)
 
@@ -9,7 +9,7 @@ CFLAGS=-O2 -Wall -DNDEBUG //pour executer en mode final -DNDEBUG
 
 all: $(EXEC)
 
-main: $(OBJ)
+etape6: $(OBJ)
 	$(CC) $(CFLAGS) -o ./bin/$@ $^ $(LDFLAGS)
 
 %.o: %.c

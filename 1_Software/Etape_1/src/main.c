@@ -15,15 +15,34 @@ FIN FONCTION*/
 
 int PGCD(int A, int B)
 {
-	while(a!=b){
-		
-	}
-	return A;
+
+	/*
+    while(A!=B){
+        if(A>B)
+            A=A-B;
+        else
+            B=B-A;
+        }
+    return A;*/
+
+    if (A==0)
+        return B;
+    if (B==0)
+        return A;
+        
+    while(A!=B){
+        if(A>B)
+            A=A-B;
+        else
+            B=B-A;
+        }
+    return A;
 }
 
 int main (int argc, char * argv []){
 	printf("(II) Starting PGCD program\n");
 
+	printf("PGCD = %d\n",PGCD(15,20));
 
 	printf("(II) End of PGCD program\n");
   return 0;
