@@ -2,9 +2,22 @@
 #include "stdlib.h"
 #include "math.h"
 
+/*FONCTION PGCD( A, B )
+  TANT QUE A /= B ALORS
+    SI A > B ALORS
+      A = A – B
+    SINON
+      B = B – A
+    FIN ALORS
+  FIN TANT QUE
+  RENVOYER A
+FIN FONCTION*/
+
 int PGCD(int A, int B)
 {
-
+	while(a!=b){
+		
+	}
 	return A;
 }
 
